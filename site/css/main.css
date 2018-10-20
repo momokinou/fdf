@@ -1,0 +1,109 @@
+body
+{
+	background-color: #36393E;
+}
+
+p
+{
+	height: 1000px;
+}
+
+.menu nav
+{
+	position: relative;
+	right: 0;
+	left: 0;
+	width: 1000px;
+	height: 55px;
+	background-color: #FFFFFF;
+	display: table;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 5px;
+	border-color: white;
+	border: 3px solid #000000;
+	padding: 0;
+}
+
+.menu nav li
+{
+	display: table-cell;
+	width: 500px;
+}
+
+.menu nav li a 
+{
+	text-decoration: none;
+	color: #000000;
+	display: block;
+	text-align: center;
+	line-height: 55px;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.menu nav li a:hover 
+{
+		background-color: #656a75;
+		color: white;
+		transition-duration: 0.1s;
+}
+
+
+/* Gestion du menu en 3D */
+
+
+.selectperso {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 10px;
+	margin-left: 1340px;
+    width: 19%;
+}    .selectperso select {
+        font-family: 'Bitter', serif;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 20px;
+        outline: 0;
+        border: 4px solid #000000;
+        border-radius: 0px;
+        background: #fffff;
+        color: #000000;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .selectperso select::-ms-expand {
+            display: none;
+        }
+        .selectperso select:hover,
+        .selectperso select:focus {
+            color: #060606;
+            background: #ffffff;
+        }
+        .selectperso select:disabled {
+            opacity: 1;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 18px;
+    right: 27px;
+    width: 0px;
+    height: 0px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.selectperso select:hover ~ .select_arrow,
+.selectperso select:focus ~ .select_arrow {
+    border-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #000000;
+}
